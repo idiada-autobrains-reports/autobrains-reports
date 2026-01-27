@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @page {
+            size: A4;
+            margin: 20mm;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        /* Styling for the Navbar */
+        #navbar {
+            position: fixed;       /* Keep the navbar fixed at the top */
+            top: 0;                /* Set the navbar at the top of the page */
+            left: 0;               /* Align it to the left edge */
+            width: 100%;           /* Ensure it spans the entire width of the page */
+            height: 50px;
+            background-color: #333;
+            overflow: hidden;
+            z-index: 1000;         /* Ensure the navbar is on top of other content */
+            padding: 10px 0;       /* Adjust the padding to make it look nice */
+            display: flex;
+            align-items: center;          /* Vertically center items */
+            justify-content: space-between; /* Left & right alignment */
+        }
+
+        #navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 17px;
+            background-color: #333;
+        }
+
+        #navbar a:hover {
+            background-color: #333;
+            color: black;
+        }
+
+
+        /* Logo styling */
+        #logo {
+            height: 50px; /* Set the height of the logo */
+            width: 100px; /* Keep the aspect ratio of the logo */
+            margin-right: 10px;        /* Push the logo to the far right */
+            background: transparent; /* Ensure the background is transparent */
+        }
+
+        /* Styling for the table */
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 30px auto;  /* Center the table on the page */
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        td {
+            background-color: #fafafa;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div id="navbar">
+        <a href="../index_Main_Page.html" style="font-weight: bold;">Main Page</a>
+        <img id="logo" src="../logo.png"; >
+
+    </div>
+
+    <!-- Content -->
+    <div id="content">
+        <br><br><br>
+        <h1>PG PoC Report</h1>
+        <hr style="border: 1px solid #2c3e50; margin-top: 20px; margin-bottom: 20px;"> <!-- Simple line with custom style -->
+        
+        <p>Click on the link to visualize the PG (Proving Grounds) PoC report in PDF version:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th><a href="https://clientportal.idiada.com/share/275aee1d-bf1e-4532-a8c5-1fa5d37d198b">PoC Report (PDF)</a></th>
+                </tr>
+            </thead>
+        </table>
+
+        <p>Click on the link to visualize the UN152 and EuroNCAP kinematics report in PDF version:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th><a href="executive_report.html">Executive Report</a></th>
+                    <th><a href="short_executive_report.html">Executive Report (x < 30 m)</a></th>
+                </tr>
+            </thead>
+            <tbody>
+                <td>Report containing an executive summary from all tests</td>
+                <td>Report containing an executive summary from all tests considering distances between 0 to 30 m</td>
+
+            </tbody>
+        </table>
+
+        <p>Click on the links in the table to visualize the test results:</p>
+
+        <!-- Table with test names -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Target type</th>
+                    <th>Test Scenario</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Car-to-Car</strong></td>
+                    <td>
+                        <a href="CCRs_60_0.html">CCRs (60 km/h)</a><br>
+                        <a href="CCRm_offset_50_40_20.html">CCRm offset 50</a><br>
+                        <a href="CCRm_60_20.html">CCRm (60 km/h)</a><br>
+                        <a href="CCRm_30_20.html">CCRm (30 km/h)</a><br>
+                        <a href="CCFtap_20_60.html">CCFTap (20 km/h -ego-, 60 km/h -target-)</a><br>
+                    </td>
+                </tr>                
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

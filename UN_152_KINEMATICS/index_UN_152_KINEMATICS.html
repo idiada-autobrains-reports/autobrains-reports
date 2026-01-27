@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @page {
+            size: A4;
+            margin: 20mm;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+       /* Styling for the Navbar */
+       #navbar {
+            position: fixed;       /* Keep the navbar fixed at the top */
+            top: 0;                /* Set the navbar at the top of the page */
+            left: 0;               /* Align it to the left edge */
+            width: 100%;           /* Ensure it spans the entire width of the page */
+            height: 50px;
+            background-color: #333;
+            overflow: hidden;
+            z-index: 1000;         /* Ensure the navbar is on top of other content */
+            padding: 10px 0;       /* Adjust the padding to make it look nice */
+            display: flex;
+            align-items: center;          /* Vertically center items */
+            justify-content: space-between; /* Left & right alignment */
+        }
+
+        #navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 17px;
+            background-color: #333;
+        }
+
+        #navbar a:hover {
+            background-color: #333;
+            color: black;
+        }
+
+        /* Logo styling */
+        #logo {
+            height: 50px; /* Set the height of the logo */
+            width: 100px; /* Keep the aspect ratio of the logo */
+            margin-right: 10px;        /* Push the logo to the far right */
+            background: transparent; /* Ensure the background is transparent */
+        }
+
+        /* Styling for the table */
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 30px auto;  /* Center the table on the page */
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        td {
+            background-color: #fafafa;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div id="navbar">
+        <a href="../index_Main_Page.html" style="font-weight: bold;">Main Page</a>
+        <img id="logo" src="../logo.png"; >
+    </div>
+
+    <!-- Content -->
+    <div id="content">
+        <br><br><br>
+        <h1>UN152 and EuroNCAP kinematics analysis report</h1>
+        <hr style="border: 1px solid #2c3e50; margin-top: 20px; margin-bottom: 20px;"> <!-- Simple line with custom style -->
+        
+        <p>Click on the link to visualize the UN152 and EuroNCAP kinematics report in PDF version:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th><a href="https://clientportal.idiada.com/share/c9104626-b06d-4dbb-81ef-8718024f2b69">UN152 Report (PDF)</a></th>
+                </tr>
+            </thead>
+        </table>
+
+        <p>Click on the links in the table to visualize the executive results:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th><a href="executive_report.html">Executive Report</a></th>
+                    <th><a href="short_executive_report.html">Executive Report (x < 30 m)</a></th>
+                </tr>
+            </thead>
+            <tbody>
+                <td>Report containing an executive summary from all tests</td>
+                <td>Report containing an executive summary from all tests considering distances between 0 to 25 m</td>
+
+            </tbody>
+        </table>
+
+        <p>Click on the links in the table to visualize the test results:</p>
+
+        <!-- Table with test names -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Target type</th>
+                    <th>Test Scenario</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Car-to-Car (CCRs)</strong></td>
+                    <td>
+                        <a href="CCRs_30_0.html">CCRs (30 km/h)</a><br>
+                        <a href="CCRs_60_0.html">CCRs (60 km/h)</a><br>
+                        <a href="CCRs_offset_50_10_0.html">CCRs offset 50</a><br>
+                        <a href="CCRs_offset_75_20_0.html">CCRs offset 75</a><br>
+                        <a href="CCRs_offset_-50_20_0.html">CCRs offset -50</a><br>
+                        <a href="CCRs_offset_-75_10_0.html">CCRs offset -75</a><br>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Car-to-Car (CCRm)</strong></td>
+                    <td>
+                        <a href="CCRm_30_20.html">CCRm (30 km/h)</a><br>
+                        <a href="CCRm_60_20.html">CCRm (60 km/h)</a><br>
+                        <a href="CCRm_offset_50_40_20.html">CCRm offset 50</a><br>
+                        <a href="CCRm_offset_75_30_20.html">CCRm offset 75</a><br>
+                        <a href="CCRm_offset_-50_30_20.html">CCRm offset -50</a><br>
+                        <a href="CCRm_offset_-75_40_20.html">CCRm offset -75</a><br>
+
+                    </td>
+                <tr>
+                    <td><strong>Car-to-Car (CCRb)</strong></td>
+                    <td>
+                        <a href="CCRb_50_40_-2.html">CCRb (40 m, -2 m/s²)</a><br>
+                        <a href="CCRb_50_40_-6.html">CCRb (40m, -6 m/s²)</a><br>
+                        <a href="CCRb_offset_-50_50_50_-2.html">CCRb offset (12m, -6 m/s²)</a><br>
+                        <a href="CCRb_offset_-50_50_50_-6.html">CCRb offset (12m, -2 m/s²)</a><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Car-to-Car (CCFTap)</strong></td>
+                    <td>
+                        <a href="CCFtap_10_30.html">CCFTap (10 km/h -ego-, 30 km/h -target-)</a><br>
+                        <a href="CCFtap_10_60.html">CCFTap (10 km/h -ego-, 60 km/h -target-)</a><br>
+                        <a href="CCFtap_20_30.html">CCFTap (20 km/h -ego-, 30 km/h -target-)</a><br>
+                        <a href="CCFtap_20_60.html">CCFTap (20 km/h -ego-, 60 km/h -target-)</a><br>
+                    </td>
+                </tr> 
+                <tr>
+                    <td><strong>Pedestrian (CPNC)</strong></td>
+                    <td>
+                        <a href="CPNC_20_5.html">CPNC (20 km/h)</a><br>
+                        <a href="CPNC_40_5.html">CPNC (40 km/h)</a><br>
+                        <a href="CPNC_60_5.html">CPNC (60 km/h)</a><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Pedestrian (CPNCO)</strong></td>
+                    <td>
+                        <a href="CPNCO_30_5.html">CPNCO (30 km/h)</a><br>
+                        <a href="CPNCO_50_5.html">CPNCO (50 km/h)</a><br>
+                        <a href="CPNCO_60_5.html">CPNCO (60 km/h)</a><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Pedestrian (CPFA)</strong></td>
+                    <td>
+                        <a href="CPFA_30_8.html">CPFA (30 km/h)</a><br>
+                        <a href="CPFA_60_8.html">CPFA (60 km/h)</a><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Pedestrian (CPNA)</strong></td>
+                    <td>
+                        <a href="CPNA25_30_5.html">CPNA25 (30 km/h)</a><br>
+                        <a href="CPNA25_60_5.html">CPNA25 (60 km/h)</a><br>
+                        <a href="CPNA75_30_5.html">CPNA75 (30 km/h)</a><br>
+                        <a href="CPNA75_60_5.html">CPNA75 (60 km/h)</a><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Cyclist (CBNA)</strong></td>
+                    <td>
+                        <a href="CBNA_30_15.html">CBNA (30 km/h)</a><br>
+                        <a href="CBNA_60_15.html">CBNA (60 km/h)</a><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Cyclist (CBFA)</strong></td>
+                    <td>
+                        <a href="CBFA_20_20.html">CBFA (20 km/h)</a><br>
+                        <a href="CBFA_40_20.html">CBFA (40 km/h)</a><br>
+                        <a href="CBFA_60_20.html">CBFA (60 km/h)</a><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Cyclist (CBNAO)</strong></td>
+                        <td>
+                            <a href="CBNAO_10_20.html">CBNAO (10 km/h)</a><br>
+                            <a href="CBNAO_30_20.html">CBNAO (30 km/h)</a><br>
+                            <a href="CBNAO_60_20.html">CBNAO (60 km/h)</a><br>
+                        </td>
+                </tr>
+                <!--
+                <tr>
+                    <td><strong>LKA</strong></td>
+                    <td>
+                        <a href="">LKA Dashed Line (0.4 m/s)</a><br>
+                        <a href="">LKA Dashed Line (0.6 m/s)</a><br>
+                        <a href="">LKA Solid Line (0.4 m/s)</a><br>
+                        <a href="">LKA Solid Line (0.6 m/s)</a><br>
+                        <a href="">LKA Road Edge (0.4 m/s)</a><br>
+                        <a href="">LKA Road Edge (0.6 m/s)</a><br>
+                    </td>
+                </tr> -->
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

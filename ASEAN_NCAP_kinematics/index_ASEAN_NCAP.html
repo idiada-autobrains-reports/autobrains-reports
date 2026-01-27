@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @page {
+            size: A4;
+            margin: 20mm;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        /* Styling for the Navbar */
+        #navbar {
+            position: fixed;       /* Keep the navbar fixed at the top */
+            top: 0;                /* Set the navbar at the top of the page */
+            left: 0;               /* Align it to the left edge */
+            width: 100%;           /* Ensure it spans the entire width of the page */
+            height: 50px;
+            background-color: #333;
+            overflow: hidden;
+            z-index: 1000;         /* Ensure the navbar is on top of other content */
+            padding: 10px 0;       /* Adjust the padding to make it look nice */
+            display: flex;
+            align-items: center;          /* Vertically center items */
+            justify-content: space-between; /* Left & right alignment */
+        }
+
+        #navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 17px;
+            background-color: #333;
+        }
+
+        #navbar a:hover {
+            background-color: #333;
+            color: black;
+        }
+
+
+        /* Logo styling */
+        #logo {
+            height: 50px; /* Set the height of the logo */
+            width: 100px; /* Keep the aspect ratio of the logo */
+            margin-right: 10px;        /* Push the logo to the far right */
+            background: transparent; /* Ensure the background is transparent */
+        }
+
+        /* Styling for the table */
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 30px auto;  /* Center the table on the page */
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        td {
+            background-color: #fafafa;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div id="navbar">
+        <a href="../index_Main_Page.html" style="font-weight: bold;">Main Page</a>
+        <img id="logo" src="../logo.png"; >
+    </div>
+
+    <!-- Content -->
+    <div id="content">
+        <br><br><br>
+        <h1>ASEAN NCAP kinematics report</h1>
+        <hr style="border: 1px solid #2c3e50; margin-top: 20px; margin-bottom: 20px;"> <!-- Simple line with custom style -->
+        
+        <p>Click on the link to visualize the ASEAN NCAP kinematics report in PDF version:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th><a href="https://clientportal.idiada.com/share/5072dbae-6b79-494e-b9eb-9b1c168b6942">ASEAN NCAP kinematics report (PDF)</a></th>
+                </tr>
+            </thead>
+        </table>
+
+        <p>Click on the links in the table to visualize the executive results:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th><a href="executive_report_ASEAN_NCAP.html">Executive Report</a></th>
+                    <th><a href="short_executive_report_ASEAN_NCAP.html">Executive Report (x < 30 m)</a></th>
+                </tr>
+            </thead>
+            <tbody>
+                <td>Report containing an executive summary from all tests</td>
+                <td>Report containing an executive summary from all tests considering distances between 0 to 25 m</td>
+
+            </tbody>
+        </table>
+        <p>Click on the links in the table to visualize the test results:</p>
+
+        <!-- Table with test names -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Target type</th>
+                    <th>Test Scenario</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Car-to-Motorcyclist Crossing (CMCrossing)</strong></td>
+                    <td>
+                        <a href="CMCrossing_50_60_20.html">CMCrossing 50 % (ego 60 km/h)</a><br>
+                        <a href="CMCrossing_50_50_20.html">CMCrossing 50 % (ego 50 km/h)</a><br>
+                        <a href="CMCrossing_50_40_20.html">CMCrossing 50 % (ego 40 km/h)</a><br>
+                        <a href="CMCrossing_50_30_20.html">CMCrossing 50 % (ego 30 km/h)</a><br>
+                        <a href="CMCrossing_50_20_20.html">CMCrossing 50 % (ego 20 km/h)</a><br>
+                        <a href="CMCrossing_-50_60_20.html">CMCrossing -50 % (ego 60 km/h)</a><br>
+                        <a href="CMCrossing_-50_50_20.html">CMCrossing -50 % (ego 50 km/h)</a><br>
+                        <a href="CMCrossing_-50_40_20.html">CMCrossing -50 % (ego 40 km/h)</a><br>
+                        <a href="CMCrossing_-50_30_20.html">CMCrossing -50 % (ego 30 km/h)</a><br>
+                        <a href="CMCrossing_-50_20_20.html">CMCrossing -50 % (ego 20 km/h)</a><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Car-to-Motorcycle Front Turn Across Path scenario (CMFtap)</strong></td>
+                    <td>
+                        <a href="CMFtap_10_30.html">CMFtap (ego 10 km/h, target 30 km/h)</a><br>
+                        <a href="CMFtap_10_45.html">CMFtap (ego 10 km/h, target 45 km/h)</a><br>
+                        <a href="CMFtap_10_60.html">CMFtap (ego 10 km/h, target 60 km/h)</a><br>
+                        <a href="CMFtap_20_30.html">CMFtap (ego 20 km/h, target 30 km/h)</a><br>
+                        <a href="CMFtap_20_45.html">CMFtap (ego 20 km/h, target 45 km/h)</a><br>
+                        <a href="CMFtap_20_60.html">CMFtap (ego 20 km/h, target 60 km/h)</a><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Car-to-Motorcycle Oncoming scenario (CMOncoming)</strong></td>
+                    <td>
+                        <a href="CMOncoming_0.2_72_60.html">CMOncoming (lateral speed 0.2 m/s)</a><br>
+                        <a href="CMOncoming_0.3_72_60.html">CMOncoming (lateral speed 0.3 m/s)</a><br>
+                        <a href="CMOncoming_0.4_72_60.html">CMOncoming (lateral speed 0.4 m/s)</a><br>
+                        <a href="CMOncoming_0.5_72_60.html">CMOncoming (lateral speed 0.5 m/s)</a><br>
+                        <a href="CMOncoming_0.6_72_60.html">CMOncoming (lateral speed 0.6 m/s)</a><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Car-to-Motorcycle Rear-end moving scenario (CMRm)</strong></td>
+                    <td>
+                        <a href="CMRm_25_40_30.html">CMRm 25% (ego 40 km/h, target 30 km/h)</a><br>
+                        <a href="CMRm_25_50_30.html">CMRm 25% (ego 50 km/h, target 30 km/h)</a><br>
+                        <a href="CMRm_25_60_30.html">CMRm 25% (ego 60 km/h, target 30 km/h)</a><br>
+                        <a href="CMRm_25_60_45.html">CMRm 25% (ego 60 km/h, target 45 km/h)</a><br>
+                        <a href="CMRm_25_70_30.html">CMRm 25% (ego 70 km/h, target 30 km/h)</a><br>
+                        <a href="CMRm_25_70_45.html">CMRm 25% (ego 70 km/h, target 45 km/h)</a><br>
+                        <a href="CMRm_25_70_60.html">CMRm 25% (ego 70 km/h, target 60 km/h)</a><br>
+                        <a href="CMRm_25_80_30.html">CMRm 25% (ego 80 km/h, target 30 km/h)</a><br>
+                        <a href="CMRm_25_80_45.html">CMRm 25% (ego 80 km/h, target 45 km/h)</a><br>
+                        <a href="CMRm_25_80_60.html">CMRm 25% (ego 80 km/h, target 60 km/h)</a><br>
+                        <a href="CMRm_50_40_30.html">CMRm 50% (ego 40 km/h, target 30 km/h)</a><br>
+                        <a href="CMRm_50_50_30.html">CMRm 50% (ego 50 km/h, target 30 km/h)</a><br>
+                        <a href="CMRm_50_60_30.html">CMRm 50% (ego 60 km/h, target 30 km/h)</a><br>
+                        <a href="CMRm_50_60_45.html">CMRm 50% (ego 60 km/h, target 45 km/h)</a><br>
+                        <a href="CMRm_50_70_30.html">CMRm 50% (ego 70 km/h, target 30 km/h)</a><br>
+                        <a href="CMRm_50_70_45.html">CMRm 50% (ego 70 km/h, target 45 km/h)</a><br>
+                        <a href="CMRm_50_70_60.html">CMRm 50% (ego 70 km/h, target 60 km/h)</a><br>
+                        <a href="CMRm_50_80_30.html">CMRm 50% (ego 80 km/h, target 30 km/h)</a><br>
+                        <a href="CMRm_50_80_45.html">CMRm 50% (ego 80 km/h, target 45 km/h)</a><br>
+                        <a href="CMRm_50_80_60.html">CMRm 50% (ego 80 km/h, target 60 km/h)</a><br>
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @page {
+            size: A4;
+            margin: 20mm;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        /* Styling for the Navbar */
+        #navbar {
+            position: fixed;       /* Keep the navbar fixed at the top */
+            top: 0;                /* Set the navbar at the top of the page */
+            left: 0;               /* Align it to the left edge */
+            width: 100%;           /* Ensure it spans the entire width of the page */
+            height: 50px;
+            background-color: #333;
+            overflow: hidden;
+            z-index: 1000;         /* Ensure the navbar is on top of other content */
+            padding: 10px 0;       /* Adjust the padding to make it look nice */
+            display: flex;
+            align-items: center;          /* Vertically center items */
+            justify-content: space-between; /* Left & right alignment */
+        }
+
+        #navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 17px;
+            background-color: #333;
+        }
+
+        #navbar a:hover {
+            background-color: #333;
+            color: black;
+        }
+
+
+        /* Logo styling */
+        #logo {
+            height: 50px; /* Set the height of the logo */
+            width: 100px; /* Keep the aspect ratio of the logo */
+            margin-right: 10px;        /* Push the logo to the far right */
+            background: transparent; /* Ensure the background is transparent */
+        }
+
+        /* Styling for the table */
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 30px auto;  /* Center the table on the page */
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        td {
+            background-color: #fafafa;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div id="navbar">
+        <a href="../index_Main_Page.html" style="font-weight: bold;">Main Page</a>
+        <img id="logo" src="../logo.png"; >
+    </div>
+
+    <!-- Content -->
+    <div id="content">
+        <br><br><br>
+        <h1>ASEAN NCAP Auto High Beam (AHB) report</h1>
+        <hr style="border: 1px solid #2c3e50; margin-top: 20px; margin-bottom: 20px;"> <!-- Simple line with custom style -->
+        
+        <p>Click on the link to visualize the ASEAN NCAP AHB report in PDF version:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th><a href="https://drive.google.com/file/d/1O49kSkSz2Kkv2L62oOKeICYB5GH4Pe4R/view?usp=sharing">ASEAN NCAP AHB report (PDF)</a></th>
+                </tr>
+            </thead>
+        </table>
+
+        <p>Click on the links in the table to visualize the executive results:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th><a href="executive_report_ASEAN_NCAP_AHB.html">Executive Report</a></th>
+                    <th><a href="short_executive_report_ASEAN_NCAP_AHB.html">Executive Report (x < 30 m)</a></th>
+                </tr>
+            </thead>
+            <tbody>
+                <td>Report containing an executive summary from all tests</td>
+                <td>Report containing an executive summary from all tests considering distances between 0 to 25 m</td>
+
+            </tbody>
+        </table>
+        <p>Click on the links in the table to visualize the test results:</p>
+
+        <!-- Table with test names -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Target type</th>
+                    <th>Test Scenario</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Auto High Beam (AHB) for Bycicle</strong></td>
+                    <td>
+                        <a href="AHB_bicycle_50_0.html">AHB Bycicle (ego 50 km/h)</a><br>
+                        <a href="AHB_bicycle_60_0.html">AHB Bycicle (ego 60 km/h)</a><br>
+                        <a href="AHB_bicycle_70_0.html">AHB Bycicle (ego 70 km/h)</a><br>
+                        <a href="AHB_bicycle_80_0.html">AHB Bycicle (ego 80 km/h)</a><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Auto High Beam (AHB) for Car</strong></td>
+                    <td>
+                        <a href="AHB_car_50_0.html">AHB Car (ego 50 km/h)</a><br>
+                        <a href="AHB_car_60_0.html">AHB Car (ego 50 km/h)</a><br>
+                        <a href="AHB_car_70_0.html">AHB Car (ego 50 km/h)</a><br>
+                        <a href="AHB_car_80_0.html">AHB Car (ego 50 km/h)</a><br>
+                        <a href="AHB_car_90_0.html">AHB Car (ego 50 km/h)</a><br>
+                        <a href="AHB_car_100_0.html">AHB Car (ego 50 km/h)</a><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Auto High Beam (AHB) in Open Road</strong></td>
+                    <td>
+                        <a href="2025_10_27_20_36_03_openroad_part1_hlb_data_extract.html">AHB Open Road Part 1</a><br>
+                        <a href="2025_10_27_20_43_33_openroad_part2_hlb_data_extract.html">AHB Open Road Part 2</a><br>
+                        <a href="2025_10_27_20_53_14_openroad_part3_hlb_data_extract.html">AHB Open Road Part 3</a><br>
+                        <a href="2025_10_27_21_05_13_openroad_part4_hlb_data_extract.html">AHB Open Road Part 4</a><br>
+                        <a href="2025_10_27_21_15_57_openroad_part5_hlb_data_extract.html">AHB Open Road Part 5</a><br>
+                        <a href="2025_10_27_21_27_40_openroad_part6_hlb_data_extract.html">AHB Open Road Part 6</a><br>
+                        <a href="2025_10_27_21_42_06_openroad_part7_hlb_data_extract.html">AHB Open Road Part 7</a><br>
+                    </td>
+                </tr>
+                
+                
+                
+            </tbody>
+        </table>
+
+        <p>(*) The following tests are not available:</p>
+        <p>- AHB bycicle 100 km/h (Repetition 1 and repetition 2)</p>
+        <p>- AHB bycicle 80 km/h (Repetition 1)</p>
+        <p> Because there were not detections from the Autobrains system</p>
+
+    </div>
+
+</body>
+</html>
